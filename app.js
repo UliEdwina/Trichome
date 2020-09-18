@@ -8,7 +8,7 @@ const mongoose = require('mongoose')
 var indexRouter = require('./routes/index');
 const messageRouter = require('./routes/message');
 
-const buildPath = "client/dist";
+const buildPath = "client";
 
 require('dotenv').config()
 mongoose.connect(process.env.MONGODB_URI, {useUnifiedTopology: true, useNewUrlParser: true })
