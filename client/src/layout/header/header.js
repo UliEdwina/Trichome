@@ -83,6 +83,9 @@ class Header extends React.Component {
                                 <Link className="navbar-brand logo text-dark h2 mb-0" to="/">
                                     Trichome<span className="text-primary font-weight-bold">Media</span>
                                 </Link>
+                                <Link className="navbar-brand logo text-dark h2 mb-0" to="/aboutus">
+                                    About Us<span className="text-primary font-weight-bold">Media</span>
+                                </Link>
                                     <Navbar className="navbar-expand-lg navbar-light ml-auto">
                                         <NavbarToggler onClick={this.toggle} />
                                         <Collapse isOpen={this.state.isOpen} className=" navbar-collapse" navbar>
