@@ -5,7 +5,7 @@ export default [
   {
     menu_title: "About Us",
     //   "type": "subMenu",
-    path: "trichome/client/pages/contacts/contact1/index.js",
+    path: "/about-us",
     icon: "home",
   },
   {
