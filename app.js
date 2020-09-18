@@ -46,4 +46,11 @@ app.use(function(err, req, res, next) {
 app.all("*", (req, res) => {
     res.sendFile(`${__dirname}/${buildPath}/index.html`);
   });
+
+  const port = process.env.PORT || 3000;
+
+app.listen(port, () => {
+  console.log("App Listening on Port 3000");
+});
+
 module.exports = app;
