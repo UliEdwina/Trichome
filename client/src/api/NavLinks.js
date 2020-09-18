@@ -5,12 +5,12 @@ export default [
   {
     menu_title: "About Us",
     //   "type": "subMenu",
-    path: "/about-us",
+    path: "/aboutus",
     icon: "home",
   },
   {
     menu_title: "Contact Us",
-    path: "/contact-us",
+    path: "/contact",
     mega: true,
   },
 

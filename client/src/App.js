@@ -9,7 +9,7 @@ import $ from 'jquery';
 import './App.css';
 import './Vendor.js';
 
-import Aboutus from './Components/aboutsus';
+import Aboutus from './Components/aboutus';
 import Aboutus2 from './pages/company/aboutus2';
 import Career from './pages/company/career';
 import CareerSingle from './pages/company/careersingle';
