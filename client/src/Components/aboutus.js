@@ -1,44 +1,40 @@
 import React, { Component } from 'react';
-import ContactForm1 from '../widgets/contact/contactform1';
 
 
-class Contact1 extends Component {
-  constructor(props) {
-    super(props)
-    this.state = {
-
-    }
-  }
-  componentDidMount() {
-    window.scrollTo(0, 0)
-  }
-  render() {
-    return (
-      <div>
-        
-        {/*body content start*/}
-        <div className="page-content">
-          
-          <section>
-            <div className="container">
-              <div className="row justify-content-center mb-5 text-center">
-                <div className="col-12 col-lg-8">
-                  <div> <span className="badge badge-primary-soft p-2">
-                    <i className="la la-bold ic-3x rotation" />
-                  </span>
-                    <h2 className="mt-4 mb-0">Send Us A Message! </h2>
-                    <p className="lead mb-0">Give us an idea of what services you'd be interesting in learning about. </p>
+class Memberaboutus extends Component {
+    render() {
+        return (
+              <div className="container">
+                  <div className="row align-items-center justify-content-between">
+                  <div className="col-12 col-lg-6 mb-6 mb-lg-0 order-lg-1">
+                  <div className="row align-items-center pic">
+                    <div className="col-6 ">
+                      <img src={require(`../assets/images/about/10.jpg`)} className="img-fluid rounded shadow-lg" alt="..." />
+                    </div>
+                    <div className="col-6">
+                      <img src={require(`../assets/images/about/12.jpg`)} className="img-fluid rounded shadow-lg mt-10" alt="..." />
+                    </div>
+                    <div className="col-10 ml-auto mr-auto mt-n11">
+                      <img src={require(`../assets/images/about/11.jpg`)} className="img-fluid rounded shadow-lg" alt="..." />
+                    </div>
+                  </div>
+                </div>
+                    
+                
+                <div className="col-12 col-lg-6 col-xl-5 widerbox">
+                  
+                    <div className="boxtext">
+                    <h2 className="mt-3 font-w-5 ">Mission</h2>
+                    <p className="lead font-w-5"> To join forces with socially responsible agencies who need things yesterday. Whether it is updating an older site, create a new one, or help with an existing project. Let us evaluate your needs so that we can see what you see and we will work diligently to make your exprience seemless and worth it! We are not you're typical hoyty-toyty wonky tech types. We're hard working, humble, and kind because these are our values. Can't wait to hear from you!  </p>
+                    <h2 className="mt-3 font-w-5">Vision </h2>
+                  <p className="lead font-w-5">To grow into a full-service digital media agency. Together we can collaborate and develop dynamic web applications, create outstanding mind blowing graphics, and deliver media for speedy consumption for your users or visitors, as well as give you counsel on project-managment or business start-up tips. </p>
                   </div>
                 </div>
               </div>
-              <ContactForm1 />
-            </div>
-          </section>
-        </div>
-        {/*body content end*/}
-      </div>
-    );
-  }
+              </div>
+              
+        );
+    }
 }
 
-export default Contact1;
+export default Memberaboutus;

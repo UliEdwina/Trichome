@@ -2,17 +2,7 @@
  *  Main Menu Json
  */
 export default [
-  {
-    menu_title: "About Us",
-    //   "type": "subMenu",
-    path: "/aboutus",
-    icon: "home",
-  },
-  {
-    menu_title: "Contact Us",
-    path: "/contact",
-    mega: true,
-  },
+  
 
   {
     menu_title: "Services",
