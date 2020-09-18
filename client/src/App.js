@@ -127,7 +127,7 @@ class App extends Component {
             <Route path="/blog-single" component={BlogSingle} />
 
             {/* Contact Pages */}
-            <Route path="/contact-us" component={Contact1} />
+            <Route path="/contact" component={Contact1} />
             <Route path="/contact-us-1" component={Contact2} />
 
             {/* Portfolio Pages */}
