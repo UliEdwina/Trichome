@@ -115,7 +115,7 @@ class App extends Component {
             {/* handshakeDeal */}
             <Route path= "/jumpin" component={Jumping} />
             {/* Company Pages */}
-            <Route path="/about-us" component={Aboutus} />
+            <Route path="/aboutus" component={Aboutus} />
             <Route path="/about-us2" component={Aboutus2} />
             <Route path="/career" component={Career} />
             <Route path="/career-single" component={CareerSingle} />
