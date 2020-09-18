@@ -8,7 +8,7 @@ const mongoose = require('mongoose')
 var indexRouter = require('./routes/index');
 const messageRouter = require('./routes/message');
 
-
+const buildPath = "client/dist";
 
 require('dotenv').config()
 mongoose.connect(process.env.MONGODB_URI, {useUnifiedTopology: true, useNewUrlParser: true })
@@ -43,5 +43,7 @@ app.use(function(err, req, res, next) {
   res.status(err.status || 500);
   res.render('error');
 });
-
+app.all("*", (req, res) => {
+    res.sendFile(`${__dirname}/${buildPath}/index.html`);
+  });
 module.exports = app;
