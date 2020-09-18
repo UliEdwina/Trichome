@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 // import Counter1 from '../../../widgets/counter/counter1';
-// import Counter3 from '../../../widgets/counter/counter3';
+import Counter3 from '../../../widgets/counter/counter3';
 // import Counter2 from '../../../widgets/counter/counter2';
 import Pageheading from '../../../widgets/Pageheading';
 
