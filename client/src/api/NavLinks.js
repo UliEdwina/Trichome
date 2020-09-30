@@ -4,12 +4,12 @@
 export default [
 {
 menu_title: "About",
-path: "/aboutus"
+path: "aboutus"
 
 },
 {
-    menu_title: "Contact",
-    path: "/contact"
+menu_title: "Contact",
+path: "contact"
     
     },  
    
