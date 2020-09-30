@@ -83,17 +83,10 @@ class Header extends React.Component {
                                 <Link className="navbar-brand logo text-dark h2 mb-0" to="/">
                                     Trichome<span className="text-primary font-weight-bold">Media</span>
                                 </Link>
-                               
                                     <Navbar className="navbar-expand-lg navbar-light ml-auto">
                                         <NavbarToggler onClick={this.toggle} />
                                         <Collapse isOpen={this.state.isOpen} className=" navbar-collapse" navbar>
                                             <Nav className="ml-auto" navbar>
-                                            <Link  to="/aboutus">
-                                   About Us
-                                </Link>
-                                <Link  to="/contact">
-                                   Contact
-                                </Link>
                                                 {navLinks.map((navLink, index) => (
                                                     (navLink.type && navLink.type === 'subMenu') ?
                                                         <UncontrolledDropdown nav inNavbar key={index}>

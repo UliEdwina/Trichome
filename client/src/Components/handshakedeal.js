@@ -26,7 +26,7 @@ class Handshake extends Component {
                                  How Can We Help?
                             </h1>
                             {/* Text */}
-                            <p className="lead text-muted font-w-5"> Let us give you some free pointers if you're wanting to start a website and don't know where to start. There are plenty of agencies where you can DIY a website with drag-and-drop interfaces but having and tailoring those kinds of platforms often means that they will charge you outragous fees if you need more edvanced features. With us you will receive a free report, a free estimate, and a basic guide to launching your dream site no matter what stage in the project that you happen to be in. Email us today via our Contact Portal.   </p>
+                            <p className="lead text-muted font-w-5"> Let us give you some free pointers if you're wanting to start a website and don't know where to start. There are plenty of agencies where you can DIY a website with drag-and-drop interfaces but tailoring those kinds of platforms often means that they will charge you extra fees if you need more advanced features. With us, you will receive a free report, a free estimate, and a basic guide to launching your dream site no matter what stage in the project that you happen to be in. Email us today via our Contact Portal.    </p>
                             </div>
 
             </div>

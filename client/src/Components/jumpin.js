@@ -18,7 +18,7 @@ class Jumpin extends Component {
                                 Jumping<span className="text-primary"></span> In!
                             </h1>
                             {/* Text */}
-                            <p className="lead text-muted font-w-5"> Sometimes you need somone to jump in and fix something right away. Or maybe you need graphics and other content because you have a deadline you need to meet. Perhaps you started a project already and just need a little bit of help because your work has you swamped. Let us jump in and help. Get in contact with us and tell us about your needs and we will accomodate you.  </p>
+                            <p className="lead text-muted font-w-5"> Sometimes you need someone to jump in and fix something right away. Or maybe you need graphics and other content because you have a deadline you need to meet. Perhaps you started a project already and just need a little bit of help because your other work has you swamped. Let us jump in and help. Get in contact with us and tell us about your needs and we will accommodate you.  </p>
                             </div>
 
                             <div className="flex-child">

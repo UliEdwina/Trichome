@@ -2,8 +2,19 @@
  *  Main Menu Json
  */
 export default [
-  
 
+    {
+        "menu_title": "About ",
+       
+        "path": "/aboutus",
+       
+      },
+  {
+    "menu_title": "Contact",
+    
+    "path": "/contact",
+   
+  },
   {
     menu_title: "Services",
     type: "subMenu",
@@ -41,6 +52,8 @@ export default [
         icon: "arrow_right_alt",
         child_routes: null,
       },
+     
     ],
+    
   },
 ];

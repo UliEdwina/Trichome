@@ -83,7 +83,7 @@ class Header3 extends React.Component {
                                 <Link className="navbar-brand logo text-white  h2 mb-0" to="/">
                                     Trichome<span className="font-weight-bold">Media</span>
                                 </Link>
-                                    <Navbar className="navbar-expand-lg navbar-light ml-auto">
+                                    <Navbar className="navbar-expand-lg navbar-dark ml-auto">
                                         <NavbarToggler onClick={this.toggle} />
                                         <Collapse isOpen={this.state.isOpen} className=" navbar-collapse" navbar>
                                             <Nav className="ml-auto" navbar>

@@ -25,7 +25,7 @@ class Memberaboutus extends Component {
                   
                     <div className="boxtext">
                     <h2 className="mt-3 font-w-5 ">Mission</h2>
-                    <p className="lead font-w-5"> To join forces with socially responsible agencies who need things yesterday. Whether it is updating an older site, create a new one, or help with an existing project. Let us evaluate your needs so that we can see what you see and we will work diligently to make your exprience seemless and worth it! We are not you're typical hoyty-toyty wonky tech types. We're hard working, humble, and kind because these are our values. Can't wait to hear from you!  </p>
+                    <p className="lead font-w-5"> To join forces with socially responsible agencies who need things yesterday. Whether it is updating an older site, create a new one, or help with an existing project. Let us evaluate your needs so that we can see what you see and we will work diligently to make your exprience seemless and worth it! We're hard working, humble, and kind because these are our values. Can't wait to hear from you!  </p>
                     <h2 className="mt-3 font-w-5">Vision </h2>
                   <p className="lead font-w-5">To grow into a full-service digital media agency. Together we can collaborate and develop dynamic web applications, create outstanding mind blowing graphics, and deliver media for speedy consumption for your users or visitors, as well as give you counsel on project-managment or business start-up tips. </p>
                   </div>

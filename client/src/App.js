@@ -51,7 +51,7 @@ import Portfoliosingle from './pages/portfolio/portfoliosingle';
 import  {getProducts} from './actions';
 import { connect } from 'react-redux';
 import Index2 from './pages/Index/index2';
-import DigitalContent from './Components/digitacontent'
+import DigitalContent from './Components/digitalcontent'
 import HandshakeDeal from './Components/handshakedeal'
 
 import Scrolltop from './layout/back-to-top';

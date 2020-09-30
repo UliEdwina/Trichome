@@ -27,7 +27,7 @@ class Contact1 extends Component {
                     <i className="la la-bold ic-3x rotation" />
                   </span>
                     <h2 className="mt-4 mb-0">Send Us A Message! </h2>
-                    <p className="lead mb-0">Give us an idea of what services you'd be interesting in learning about. </p>
+                    <p className="lead mb-0">Need Help now? Email <a a href="mailto:trichomemediainc@gmail.com">trichomemediainc@gmail.com</a> or Give us an idea of what services you'd be interesting in learning about in the form below. </p>
                   </div>
                 </div>
               </div>

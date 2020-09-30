@@ -14,9 +14,17 @@ body {
 
   overflow-x: hidden;
   background-color: #060f18;
-  background-size: 40px 40px;
+  background-size: 50px 40px;
   background-image: linear-gradient(to right, blue 1px, transparent 1px),
-    linear-gradient(to bottom, grey 1px, transparent 1px);
+    linear-gradient(to bottom, grey 1px, transparent .05px);
+}
+.navadd{
+    word-spacing: 2em !important;
+    padding-right: 20px !important;
+}
+
+.itemnav{
+    
 }
 .page-wrapper {
   overflow-x: hidden;
@@ -111,15 +119,17 @@ section {
   padding: 20px;
   width: 200px !important;
   height: 300px !important;
+  line-height: 5em !important;
 }
 .boxtext h1 {
   color: lightblue !important;
+  
 }
 
 .widerbox {
   background-color: rgba(118, 131, 156, 0.3) !important;
   border-radius: 25px;
-  margin-top: -40px !important;
+  margin-top: 12px !important;
 
   padding: 20px;
   max-width: 1400px !important;
@@ -447,7 +457,7 @@ Badge
 }
 .badge-primary-soft {
   background-color: rgba(19, 96, 239, 0.1);
-  color: #1360ef;
+  color: whitesmoke !important;
 }
 .badge-secondary-soft {
   background-color: rgba(80, 102, 144, 0.1);
@@ -546,6 +556,7 @@ Shadow
 .site-header.navbar-dark .navbar-nav .nav-link {
   color: #ffffff;
   font-family: "Russo One", sans-serif;
+  
 }
 .site-header.navbar-dark .navbar-nav .dropdown-submenu .nav-link {
   color: #8090b5;
@@ -559,6 +570,7 @@ Shadow
   position: relative;
   background-color: black;
   height: 80px !important;
+  word-spacing: 20px ;
 }
 #header-wrap.fixed-header {
   padding: 5px 0;
@@ -571,11 +583,14 @@ Shadow
   box-shadow: 0 10px 55px 5px rgba(137, 173, 255, 0.15) !important;
   animation: smoothScroll 1s forwards;
 }
-
+.custom1{
+    padding-right: 14px;
+    
+}
 /*--navigation--*/
 .navbar {
   padding: 0;
-  color: whitesmoke;
+  color:black !important;
   font-family: "Russo One", sans-serif;
 }
 .navbar-nav .nav-item.dropdown .dropdown-menu {
@@ -651,12 +666,16 @@ header .navbar-nav > .nav-item {
   background: #1360ef;
   color: #ffffff !important;
 }
-.dropdown-childsubmenu {
-  padding: 0.5rem 0.5rem !important;
+.childsubmenu {
+  padding: 0.5rem !important;
   font-weight: 400;
   color: #8090b5;
-  font-size: 0.9rem;
+  font-size: 0.2rem;
   text-align: left;
+  
+  word-break: break-all;
+  word-spacing: normal;
+
 }
 ul.deals {
   list-style: none;
@@ -672,6 +691,7 @@ ul.deals {
   }
   #header-wrap.fixed-header {
     padding: 15px 0;
+    
   }
   .navbar {
     justify-content: flex-end;

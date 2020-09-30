@@ -28,20 +28,24 @@ class Footer extends Component {
                         <Col className="col-12 col-sm-4 navbar-dark">
                         <h5 className="mb-4 text-white">You Matter To Us!</h5>
                         <ul className="navbar-nav list-unstyled mb-0">
-                            <li className="mb-3 nav-item"><Link className="nav-link" to="/about-us">About</Link> 
+                            <li className="mb-3 nav-item"><Link className="nav-link" to="/aboutus">About</Link> 
                             </li>
                             {/* <li className="mb-3 nav-item"><Link className="nav-link" to="/product-grid">Shop</Link> 
                             </li> */}
                             {/* <li className="mb-3 nav-item"><Link className="nav-link" to="/blog-card">Blogs</Link> 
                             </li> */}
-                            <li className="nav-item"><Link className="nav-link" to="/contact-us">Contact Us</Link> 
+                            <li className="nav-item"><Link className="nav-link" to="/contact">Contact Us</Link> 
                             </li>
                         </ul>
                         </Col>
                         <Col className="col-12 col-sm-4 mt-6 mt-sm-0 navbar-dark">
-                        <h5 className="mb-4 text-white">Service</h5>
+                        <h5 className="mb-4 text-white">Services</h5>
                         <ul className="navbar-nav list-unstyled mb-0">
                             <li className="mb-3 nav-item"><Link className="nav-link" to="/digitalcontent">Content Writing</Link> 
+                            </li>
+                            <li className="mb-3 nav-item"><Link className="nav-link" to="/fullproject">Web</Link> 
+                            </li>
+                            <li className="mb-3 nav-item"><Link className="nav-link" to="/difitalcontent">Graphics</Link> 
                             </li>
                             <li className="mb-3 nav-item"><Link className="nav-link" to="/projectmanagement">Project Management</Link> 
                             </li>
