@@ -2,20 +2,20 @@
  *  Main Menu Json
  */
 export default [
+{
+menu_title: "About",
+path: "/aboutus"
 
-    {
-        "menu_title": "About ",
-       
-        "path": "/aboutus",
-       
-      },
-  {
-    "menu_title": "Contact",
+},
+{
+    menu_title: "Contact",
+    path: "/contact"
     
-    "path": "/contact",
+    },  
    
-  },
+  
   {
+
     menu_title: "Services",
     type: "subMenu",
     path: "/",
