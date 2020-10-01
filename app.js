@@ -1,56 +1,54 @@
-var createError = require('http-errors');
-var express = require('express');
-var path = require('path');
-var cookieParser = require('cookie-parser');
-var logger = require('morgan');
-const cors = require('cors')
-const mongoose = require('mongoose')
-var indexRouter = require('./routes/index');
-const messageRouter = require('./routes/message');
+var createError = require("http-errors");
+var express = require("express");
+var path = require("path");
+var cookieParser = require("cookie-parser");
+var logger = require("morgan");
+const cors = require("cors");
+const mongoose = require("mongoose");
+const messageRouter = require("./routes/message");
 
-const buildPath = "client/dist";
-
-require('dotenv').config()
-mongoose.connect(process.env.MONGODB_URI, {useUnifiedTopology: true, useNewUrlParser: true })
-    .then(()=> console.log('MONGO-ON'))
-    .catch (err => console.log('Error'))
+require("dotenv").config();
+mongoose
+  .connect(process.env.MONGODB_URI, {
+    useUnifiedTopology: true,
+    useNewUrlParser: true,
+  })
+  .then(() => console.log("MONGO-ON"))
+  .catch((err) => console.log("Error"));
 let app = express();
-// view engine setup
-app.set('views', path.join(__dirname, 'views'));
-app.set('view engine', 'jade');
 
-app.use(logger('dev'));
+app.use(logger("dev"));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
-app.use(express.static(path.join(__dirname, buildPath)));
+app.use(express.static(path.join(__dirname, "build")));
 app.use(cors());
-app.use('/', indexRouter);
-app.use('/message', messageRouter);
+app.use("/message", messageRouter);
+
+app.all("/*", function (req, res) {
+  res.sendFile(path.join(__dirname, "build", "index.html"));
+});
 
 // catch 404 and forward to error handler
-app.use(function(req, res, next) {
+app.use(function (req, res, next) {
   next(createError(404));
 });
 
 // error handler
-app.use(function(err, req, res, next) {
+app.use(function (err, req, res, next) {
   // set locals, only providing error in development
   res.locals.message = err.message;
-  res.locals.error = req.app.get('env') === 'development' ? err : {};
+  res.locals.error = req.app.get("env") === "development" ? err : {};
 
   // render the error page
   res.status(err.status || 500);
-  res.render('error');
+  res.render("error");
 });
-app.all("*", (req, res) => {
-    res.sendFile(`${__dirname}/${buildPath}/index.html`);
-  });
 
-  const port = process.env.PORT || 3000;
+const port = process.env.PORT || 9000;
 
 app.listen(port, () => {
-  console.log("App Listening on Port 3000");
+  console.log(`app is running on port ${port}`);
 });
 
 module.exports = app;
