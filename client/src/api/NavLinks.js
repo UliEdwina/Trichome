@@ -2,20 +2,16 @@
  *  Main Menu Json
  */
 export default [
-{
-menu_title: "About",
-path: "./aboutus"
-
-},
-{
-menu_title: "Contact",
-path: "./contact"
-    
-    },  
-   
-  
   {
+    menu_title: "About",
+    path: "/aboutus",
+  },
+  {
+    menu_title: "Contact",
+    path: "/contact",
+  },
 
+  {
     menu_title: "Services",
     type: "subMenu",
     path: "/",
@@ -24,22 +20,20 @@ path: "./contact"
         path: "/handshakedeal",
         menu_title: "Hand Shake Deal",
         icon: "arrow_right_alt",
-        child_routes: null
-        
+        child_routes: null,
       },
       {
-          path: "/jumpin",
-          menu_title: "Existing Project Help",
-          icon: "arrow_right_alt",
-          child_routes: null,
-        },
-        {
-                                
-            path: "/fullproject",
-            menu_title: "Full Project Help",
-            icon: "arrow_right_alt",
-            child_routes: null,
-          },                 
+        path: "/jumpin",
+        menu_title: "Existing Project Help",
+        icon: "arrow_right_alt",
+        child_routes: null,
+      },
+      {
+        path: "/fullproject",
+        menu_title: "Full Project Help",
+        icon: "arrow_right_alt",
+        child_routes: null,
+      },
       {
         path: "/digitalcontent",
         menu_title: "Content Creation",
@@ -52,8 +46,6 @@ path: "./contact"
         icon: "arrow_right_alt",
         child_routes: null,
       },
-     
     ],
-    
   },
 ];

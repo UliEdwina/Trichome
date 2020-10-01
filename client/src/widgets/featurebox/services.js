@@ -8,7 +8,7 @@ class FeatureServices extends Component {
                 <div className="col-xl-4 col-lg-4 mb-8 mb-lg-0">
                     <div className={`px-4 py-7 rounded hover-translate text-center ${this.props.bgshadow}`}>
                         <div>
-                            <img className="img-fluid" src={require(`../../assets/images/svg/01.svg`)} alt="" />
+                            <img className="img-fluid" src="/images/svg/01.svg" alt="" />
                         </div>
                         <h5 className="mt-4 mb-3">HandShake Deal</h5>
                             <h5>Free</h5>
@@ -26,7 +26,7 @@ class FeatureServices extends Component {
                 <div className="col-xl-4 col-lg-4 col-sm-6">
                     <div className={`px-4 py-7 rounded hover-translate text-center bg-white shadow`}>
                         <div>
-                            <img className="img-fluid" src={require(`../../assets/images/svg/02.svg`)} alt="" />
+                            <img className="img-fluid" src="/images/svg/02.svg" alt="" />
                         </div>
                         <h5 className="mt-4 mb-3">Project Jump-In</h5>
                             <h5>Negotiable Fee Upon Estimate</h5>
@@ -44,7 +44,7 @@ class FeatureServices extends Component {
                 <div className="col-xl-4 col-lg-4 col-sm-6 mt-6 mt-sm-0">
                     <div className={`px-4 py-7 rounded hover-translate text-center ${this.props.bgshadow}`}>
                         <div>
-                            <img className="img-fluid" src={require(`../../assets/images/svg/03.svg`)} alt="" />
+                            <img className="img-fluid" src="/images/svg/03.svg" alt="" />
                         </div>
                         <h5 className="mt-4 mb-3">Full Project</h5>
                             <h5>Fee Upon Estimate</h5>

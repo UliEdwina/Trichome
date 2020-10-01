@@ -9,13 +9,13 @@ class Memberaboutus extends Component {
                   <div className="col-12 col-lg-6 mb-6 mb-lg-0 order-lg-1">
                   <div className="row align-items-center pic">
                     <div className="col-6 ">
-                      <img src={require(`../assets/images/about/10.jpg`)} className="img-fluid rounded shadow-lg" alt="..." />
+                      <img src="/images/about/10.jpg" className="img-fluid rounded shadow-lg" alt="..." />
                     </div>
                     <div className="col-6">
-                      <img src={require(`../assets/images/about/12.jpg`)} className="img-fluid rounded shadow-lg mt-10" alt="..." />
+                      <img src="/images/about/12.jpg" className="img-fluid rounded shadow-lg mt-10" alt="..." />
                     </div>
                     <div className="col-10 ml-auto mr-auto mt-n11">
-                      <img src={require(`../assets/images/about/11.jpg`)} className="img-fluid rounded shadow-lg" alt="..." />
+                      <img src="/images/about/11.jpg" className="img-fluid rounded shadow-lg" alt="..." />
                     </div>
                   </div>
                 </div>

@@ -1,31 +1,31 @@
-import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
-import Herosection6 from '../../widgets/herosection/herosection6';
-import Feature2 from '../../widgets/featurebox/feature2';
-import Counter2 from '../../widgets/counter/counter2';
-import Gallrylist from '../../widgets/portfolio/gallrylist';
-import OwlCarousel from 'react-owl-carousel';
-import Testimonial1 from '../../widgets/testimonial/testimonial1';
-import Blog1 from '../../widgets/blog/blog1';
-import Pricingplan4 from '../../widgets/pricingplan/pricingplan4';
-import Feature1 from '../../widgets/featurebox/feature1';
-import Worktab from '../../widgets/featuare/worktab';
-import ModalVideo from 'react-modal-video';
+import React, { Component } from "react";
+import { Link } from "react-router-dom";
+import Herosection6 from "../../widgets/herosection/herosection6";
+import Feature2 from "../../widgets/featurebox/feature2";
+import Counter2 from "../../widgets/counter/counter2";
+import Gallrylist from "../../widgets/portfolio/gallrylist";
+import Testimonial1 from "../../widgets/testimonial/testimonial1";
+import Blog1 from "../../widgets/blog/blog1";
+import Pricingplan4 from "../../widgets/pricingplan/pricingplan4";
+import Feature1 from "../../widgets/featurebox/feature1";
+import Worktab from "../../widgets/featuare/worktab";
+import ModalVideo from "react-modal-video";
+let OwlCarousel;
 window.fn = OwlCarousel;
 
 class Index7 extends Component {
   constructor(props) {
-    super(props)
+    super(props);
     this.state = {
-      isOpen: false
-    }
-    this.openModal = this.openModal.bind(this)
+      isOpen: false,
+    };
+    this.openModal = this.openModal.bind(this);
   }
   componentDidMount() {
-    window.scrollTo(0, 0)
+    window.scrollTo(0, 0);
   }
   openModal() {
-    this.setState({ isOpen: true })
+    this.setState({ isOpen: true });
   }
   render() {
     return (
@@ -45,22 +45,46 @@ class Index7 extends Component {
             <div className="container">
               <div className="row align-items-center justify-content-between">
                 <div className="col-12 col-lg-6 mb-6 mb-lg-0">
-                  <img src={require(`../../assets/images/about/14.png`)} alt="Image" className="img-fluid" />
+                  <img
+                    src={require(`/images/about/14.png`)}
+                    alt="Image"
+                    className="img-fluid"
+                  />
                 </div>
                 <div className="col-12 col-lg-6 col-xl-5">
-                  <div> <span className="badge badge-primary-soft p-2">
-                    <i className="la la-exclamation ic-3x rotation" />
-                  </span>
-                    <h2 className="mt-3">Bulit for everybody with unlimited unique features</h2>
-                    <p className="lead">We use the latest technologies it voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+                  <div>
+                    {" "}
+                    <span className="badge badge-primary-soft p-2">
+                      <i className="la la-exclamation ic-3x rotation" />
+                    </span>
+                    <h2 className="mt-3">
+                      Bulit for everybody with unlimited unique features
+                    </h2>
+                    <p className="lead">
+                      We use the latest technologies it voluptatem accusantium
+                      doloremque laudantium, totam rem aperiam.
+                    </p>
                   </div>
-                  <Link to="/" className="btn btn-primary text-white text-left mr-1"> <i className="la la-apple mr-2 ic-3x d-inline-block" />
-                    <div className="d-inline-block"> <small className="d-block">Available On The</small>
-                          App Store</div>
+                  <Link
+                    to="/"
+                    className="btn btn-primary text-white text-left mr-1"
+                  >
+                    {" "}
+                    <i className="la la-apple mr-2 ic-3x d-inline-block" />
+                    <div className="d-inline-block">
+                      {" "}
+                      <small className="d-block">Available On The</small>
+                      App Store
+                    </div>
                   </Link>
-                  <Link to="/" className="btn btn-dark text-white text-left"> <i className="la la-android mr-2 ic-3x d-inline-block" />
-                    <div className="d-inline-block"> <small className="d-block">Android App On</small>
-                          Google Play</div>
+                  <Link to="/" className="btn btn-dark text-white text-left">
+                    {" "}
+                    <i className="la la-android mr-2 ic-3x d-inline-block" />
+                    <div className="d-inline-block">
+                      {" "}
+                      <small className="d-block">Android App On</small>
+                      Google Play
+                    </div>
                   </Link>
                 </div>
               </div>
@@ -68,16 +92,34 @@ class Index7 extends Component {
           </section>
           {/*about end*/}
           {/*counter start*/}
-          <section className="custom-py-2 position-relative bg-dark parallaxie" style={{ backgroundImage: `url(${require(`../../assets/images/bg/01.jpg`)})`, backgroundPosition: 'center center', backgroundSize: 'cover', backgroundRepeat: 'no-repeat' }} data-overlay={6}>
-              <ModalVideo channel='youtube' isOpen={this.state.isOpen} autoplay={true} videoId='P_wKDMcr1Tg' onClose={() => this.setState({ isOpen: false })} />
+          <section
+            className="custom-py-2 position-relative bg-dark parallaxie"
+            style={{
+              backgroundImage: `url(${require(`/images/bg/01.jpg`)})`,
+              backgroundPosition: "center center",
+              backgroundSize: "cover",
+              backgroundRepeat: "no-repeat",
+            }}
+            data-overlay={6}
+          >
+            <ModalVideo
+              channel="youtube"
+              isOpen={this.state.isOpen}
+              autoplay={true}
+              videoId="P_wKDMcr1Tg"
+              onClose={() => this.setState({ isOpen: false })}
+            />
 
             <div className="container">
-          
               <div className="row align-items-center justify-content-between">
-               
                 <div className="col-12 col-lg-4 col-xl-5 mb-11 mb-lg-0 text-center">
                   <div className="video-btn">
-                    <a className="play-btn popup-youtube" onClick={this.openModal}><i className="la la-play" /></a>
+                    <a
+                      className="play-btn popup-youtube"
+                      onClick={this.openModal}
+                    >
+                      <i className="la la-play" />
+                    </a>
                     <div className="spinner-eff">
                       <div className="spinner-circle circle-1" />
                       <div className="spinner-circle circle-2" />
@@ -89,14 +131,34 @@ class Index7 extends Component {
                 </div>
               </div>
             </div>
-            <div className="shape-1" style={{ height: '200px', overflow: 'hidden' }}>
-              <svg viewBox="0 0 500 150" preserveAspectRatio="none" style={{ height: '100%', width: '100%' }}>
-                <path d="M0.00,49.98 C150.00,150.00 271.49,-50.00 500.00,49.98 L500.00,0.00 L0.00,0.00 Z" style={{ stroke: 'none', fill: '#fff' }} />
+            <div
+              className="shape-1"
+              style={{ height: "200px", overflow: "hidden" }}
+            >
+              <svg
+                viewBox="0 0 500 150"
+                preserveAspectRatio="none"
+                style={{ height: "100%", width: "100%" }}
+              >
+                <path
+                  d="M0.00,49.98 C150.00,150.00 271.49,-50.00 500.00,49.98 L500.00,0.00 L0.00,0.00 Z"
+                  style={{ stroke: "none", fill: "#fff" }}
+                />
               </svg>
             </div>
-            <div className="shape-1 bottom" style={{ height: '200px', overflow: 'hidden' }}>
-              <svg viewBox="0 0 500 150" preserveAspectRatio="none" style={{ height: '100%', width: '100%' }}>
-                <path d="M0.00,49.98 C150.00,150.00 349.20,-50.00 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style={{ stroke: 'none', fill: '#fff' }} />
+            <div
+              className="shape-1 bottom"
+              style={{ height: "200px", overflow: "hidden" }}
+            >
+              <svg
+                viewBox="0 0 500 150"
+                preserveAspectRatio="none"
+                style={{ height: "100%", width: "100%" }}
+              >
+                <path
+                  d="M0.00,49.98 C150.00,150.00 349.20,-50.00 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
+                  style={{ stroke: "none", fill: "#fff" }}
+                />
               </svg>
             </div>
           </section>
@@ -113,19 +175,37 @@ class Index7 extends Component {
           {/*work end*/}
           {/*testimonial start*/}
           <section className="position-relative">
-            <div className="shape-2 transform-md-rotate" style={{ overflow: 'hidden' }}>
-              <svg viewBox="0 0 500 150" preserveAspectRatio="none" style={{ height: '100%', width: '100%' }}>
-                <path d="M208.09,0.00 C152.70,67.10 262.02,75.98 200.80,150.00 L0.00,150.00 L0.00,0.00 Z" style={{ stroke: 'none', fill: '#1360ef' }} />
+            <div
+              className="shape-2 transform-md-rotate"
+              style={{ overflow: "hidden" }}
+            >
+              <svg
+                viewBox="0 0 500 150"
+                preserveAspectRatio="none"
+                style={{ height: "100%", width: "100%" }}
+              >
+                <path
+                  d="M208.09,0.00 C152.70,67.10 262.02,75.98 200.80,150.00 L0.00,150.00 L0.00,0.00 Z"
+                  style={{ stroke: "none", fill: "#1360ef" }}
+                />
               </svg>
             </div>
             <div className="container-fluid">
               <div className="row align-items-center">
                 <div className="col-12 col-md-12 col-lg-4 mb-6 mb-lg-0">
-                  <div> <span className="badge badge-light-soft p-2">
-                    <i className="la la-users ic-3x rotation" />
-                  </span>
-                    <h2 className="mt-4 text-white">Discover Our Client Feedback</h2>
-                    <p className="lead mb-0 text-white">All types of businesses need access to development resources, so we give you the option to decide how much you need to use.</p>
+                  <div>
+                    {" "}
+                    <span className="badge badge-light-soft p-2">
+                      <i className="la la-users ic-3x rotation" />
+                    </span>
+                    <h2 className="mt-4 text-white">
+                      Discover Our Client Feedback
+                    </h2>
+                    <p className="lead mb-0 text-white">
+                      All types of businesses need access to development
+                      resources, so we give you the option to decide how much
+                      you need to use.
+                    </p>
                   </div>
                 </div>
                 <Testimonial1 />
@@ -139,11 +219,17 @@ class Index7 extends Component {
             <div className="container">
               <div className="row justify-content-center text-center">
                 <div className="col-12 col-md-12 col-lg-8 mb-8 mb-lg-0">
-                  <div className="mb-5"> <span className="badge badge-primary-soft p-2">
-                    <i className="la la-file-image-o ic-3x rotation" />
-                  </span>
+                  <div className="mb-5">
+                    {" "}
+                    <span className="badge badge-primary-soft p-2">
+                      <i className="la la-file-image-o ic-3x rotation" />
+                    </span>
                     <h2 className="mt-3">See Our Bootsland App Screenshots</h2>
-                    <p className="lead mb-0">All types of businesses need access to development resources, so we give you the option to decide how much you need to use.</p>
+                    <p className="lead mb-0">
+                      All types of businesses need access to development
+                      resources, so we give you the option to decide how much
+                      you need to use.
+                    </p>
                   </div>
                 </div>
               </div>
@@ -156,22 +242,46 @@ class Index7 extends Component {
                     autoplay={true}
                   >
                     <div className="item">
-                      <img className="img-fluid" src={require(`../../assets/images/app/01.png`)} alt="" />
+                      <img
+                        className="img-fluid"
+                        src={require(`/images/app/01.png`)}
+                        alt=""
+                      />
                     </div>
                     <div className="item">
-                      <img className="img-fluid" src={require(`../../assets/images/app/02.png`)} alt="" />
+                      <img
+                        className="img-fluid"
+                        src={require(`/images/app/02.png`)}
+                        alt=""
+                      />
                     </div>
                     <div className="item">
-                      <img className="img-fluid" src={require(`../../assets/images/app/03.png`)} alt="" />
+                      <img
+                        className="img-fluid"
+                        src={require(`/images/app/03.png`)}
+                        alt=""
+                      />
                     </div>
                     <div className="item">
-                      <img className="img-fluid" src={require(`../../assets/images/app/01.png`)} alt="" />
+                      <img
+                        className="img-fluid"
+                        src={require(`/images/app/01.png`)}
+                        alt=""
+                      />
                     </div>
                     <div className="item">
-                      <img className="img-fluid" src={require(`../../assets/images/app/02.png`)} alt="" />
+                      <img
+                        className="img-fluid"
+                        src={require(`/images/app/02.png`)}
+                        alt=""
+                      />
                     </div>
                     <div className="item">
-                      <img className="img-fluid" src={require(`../../assets/images/app/03.png`)} alt="" />
+                      <img
+                        className="img-fluid"
+                        src={require(`/images/app/03.png`)}
+                        alt=""
+                      />
                     </div>
                   </OwlCarousel>
                 </div>
@@ -192,15 +302,23 @@ class Index7 extends Component {
             <div className="container">
               <div className="row align-items-end mb-5">
                 <div className="col-12 col-md-12 col-lg-4">
-                  <div> <span className="badge badge-primary-soft p-2">
-                    <i className="la la-bold ic-3x rotation" />
-                  </span>
-                    <h2 className="mt-4 mb-0">From Our Blog List Latest Feed</h2>
+                  <div>
+                    {" "}
+                    <span className="badge badge-primary-soft p-2">
+                      <i className="la la-bold ic-3x rotation" />
+                    </span>
+                    <h2 className="mt-4 mb-0">
+                      From Our Blog List Latest Feed
+                    </h2>
                   </div>
                 </div>
                 <div className="col-12 col-md-12 col-lg-6 ml-auto">
                   <div>
-                    <p className="lead mb-0">All types of businesses need access to development resources, so we give you the option to decide how much you need to use.</p>
+                    <p className="lead mb-0">
+                      All types of businesses need access to development
+                      resources, so we give you the option to decide how much
+                      you need to use.
+                    </p>
                   </div>
                 </div>
               </div>
